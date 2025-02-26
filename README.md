@@ -1,0 +1,1 @@
+Exercises done during classes and homework, during the CF6 program
