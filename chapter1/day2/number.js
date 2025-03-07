@@ -10,6 +10,7 @@ console.log("num4: ", num4)
 
 console.log("Min: " + Number.MIN_VALUE)
 console.log("Max: " + Number.MAX_VALUE)
+console.log("Min - Max safe int: " + Number.MIN_SAFE_INTEGER + " to " + Number.MAX_SAFE_INTEGER)
 
 console.log("12 is integer: ", Number.isInteger(12))
 console.log("3/aueb is NaN: ", Number.isNaN(3/"AUEB"))
@@ -18,4 +19,3 @@ console.log("Div positive by zero: ", (12/0))
 console.log("Div negative by zero: ", (-12/0))
 
 console.log("10/3 = ", (10/3).toFixed(2))
-
