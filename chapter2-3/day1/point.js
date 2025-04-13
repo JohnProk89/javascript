@@ -22,8 +22,10 @@ const pointLocal = {
     x: 1000.54,
     y: 2000.55,
     toString: function() {return `(${this.x}, ${this.y})` },
-    toLocaleString: function() {return `(${this.x.toLocaleString()} -- ${this.y.toLocaleString('en-US')})`}
+    toLocaleString: function() {return `(${this.x.toLocaleString()} -- ${this.y.toLocaleString('en-US')})`},
+    valueOf: function() {return Math.hypot(this.x, this.y).toFixed(2)}
 }
 
 console.log(pointLocal.toString())
 console.log(pointLocal.toLocaleString())
+console.log(pointLocal.valueOf())
