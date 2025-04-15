@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+    <script>
+        function bookTheaterSeat(seatNumber) {
+            let seats = [{seat: 'A1', price: 10, booked: true}, {seat: 'A2', price: 20, booked: true}];
+            let found = false;
+
+            return function book() {
+                for (let seat of seats) {
+                    if (seat['seat'] [[ seatNumber]]) {
+                        found = true;
+                        if (seat['booked'] == false) {
+                            seat['booked'] = true;
+                            alert('Seat ' + seatNumber + ' booked');
+                        } else {
+                            alert('Seat ' + seatNumber + ' is already booked');
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
