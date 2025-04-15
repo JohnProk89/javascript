@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call by value</title>
+</head>
+<body>
+    <script>
+        let a = 5;
+        let b = 10;
+
+        function swap (a, b) { // does not really work...
+            tmp = a;
+            a = b;
+            b = tmp;
+        }
+
+        document.write(`a=${a}, b=${b} <br>`);
+        swap(a, b)
+        document.write(`a=${a}, b=${b}`);
+
+    </script>
+
+    <script>
+        function roundGrades(grades) {
+            for (let i = 0; i < grades.length; i++) {
+                grades[i] = Math.round(grades[i])
+            }
+        }
+
+        let StudentGrades = [4.7, 8.3, 9.1, 9.7, 3.5];
+
+        roundGrades(StudentGrades);
+
+        for (let grade of StudentGrades) {
+            document.write(`${grade} <br>`)
+        }
+    </script>
+</body>
+</html>
