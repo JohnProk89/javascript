@@ -1,3 +1,3 @@
 export default function log(greeting) {
-    return greeting
+    console.log(greeting) 
 }
