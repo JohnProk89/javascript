@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="outer">
+
+    </div>
+
+    <script>
+        const outerDOM = document.querySelector('.outer')
+        const imgElement = document.createElement('img');
+
+        // Create Element
+        imgElement.src = './cf-logo.png';
+        imgElement.alt = 'Coding Factory';
+
+        // Append the new element to DOM as a child of 'outer'
+        outerDOM.append(imgElement)
+    </script>
+</body>
+</html>
