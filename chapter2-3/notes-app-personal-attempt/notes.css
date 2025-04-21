@@ -1,0 +1,16 @@
+* { /*In need to remember my general top rules...*/
+    padding: 0;
+}
+
+.container {
+    width: 300px;
+    height: 500px;
+    border: 1px solid black;
+    margin: auto;
+    padding: 5px
+}
+
+.datetime-holder {
+    height: 20px;
+    border-bottom: 1px solid black; /*Not covering whole line...*/
+}
