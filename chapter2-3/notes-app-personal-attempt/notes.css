@@ -1,16 +1,40 @@
-* { /*In need to remember my general top rules...*/
+* {
+    box-sizing: border-box;
+    margin: 0;
     padding: 0;
+}
+
+body {
+    padding: 10px
 }
 
 .container {
     width: 300px;
     height: 500px;
-    border: 1px solid black;
+    border: 2px solid black;
+    border-radius: 3px;
     margin: auto;
     padding: 5px
 }
 
-.datetime-holder {
+.header {
     height: 20px;
-    border-bottom: 1px solid black; /*Not covering whole line...*/
+    /* border-bottom: 1px solid black; Not covering whole line... */
+    text-align: center;
+    padding-bottom: 450px;
+}
+
+.footer {
+    display: flex;
+    height: 40px;
+    border: 1px solid black;
+}
+
+.note-adder {
+    width: 30px;
+    height: 30px;
+    background-color: lightgray;
+    border-radius: 20px;
+    text-align: center;
+    padding: auto;
 }
