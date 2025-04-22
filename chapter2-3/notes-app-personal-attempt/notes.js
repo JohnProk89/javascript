@@ -1,20 +1,20 @@
 function addNote () {
-
-        const note = document.getElementById('inputText').value
         const container = document.querySelector('.main');
-        const newNote = document.createElement('div');
-        newNote.classList.add('note');
-        container.appendChild(newNote);
-        newNote.innerHTML = `
+        const noteBlock = document.createElement('div');
+        const noteText = document.getElementById('inputText').value
+        noteBlock.classList.add('note');
+        container.appendChild(noteBlock);
+        noteBlock.innerHTML = `
             <div class="left-part">
                 <div class=".checker">   
+                    Check Button
                 </div>
                 <div class=".content">
-                ${note}
+                ${noteText}
                 </div>
             </div>
             <div class=".deleter">
+                Delete Button
             </div>
         `;
-        // console.log(document.getElementById('inputText').value)
     }
