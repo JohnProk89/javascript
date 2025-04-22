@@ -1,9 +1,9 @@
-function addNote (note="New Note") {
-    // const addButton = document.querySelector('.adder')
-    // addButton.addEventListener('click', function() {
-        console.log("Hello Button");
+function addNote () {
+
+        const note = document.getElementById('inputText').value
         const container = document.querySelector('.main');
         const newNote = document.createElement('div');
+        newNote.classList.add('note');
         container.appendChild(newNote);
         newNote.innerHTML = `
             <div class="left-part">
@@ -15,8 +15,6 @@ function addNote (note="New Note") {
             </div>
             <div class=".deleter">
             </div>
-        `
-        newNote.classList.add('note');
+        `;
+        // console.log(document.getElementById('inputText').value)
     }
-// )
-// }
