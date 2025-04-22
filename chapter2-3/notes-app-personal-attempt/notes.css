@@ -25,6 +25,10 @@
     height: 400px;
 }
 
+.note {
+    border-bottom: 1px solid black;
+}
+
 .footer {
     display: flex;
     height: 40px;
@@ -38,14 +42,17 @@
 
 input {
     width: 200px;
+    border: 2px solid black;
+    border-radius: 3px;
 }
 
 .note-adder {
+    margin-right: 5px;
+}
+
+button {
+    border: 2px solid black;
     width: 30px;
     height: 30px;
-    background-color: lightgray;
     border-radius: 20px;
-    text-align: center;
-    margin-right: 10px;
-    line-height: 30px; 
 }
