@@ -1,6 +1,5 @@
 const addBtn = document.getElementById('submitNote');
-let noteId = 0;
-// let checkId = 0;
+let noteId = 1;
 addBtn.addEventListener('click', function createNote() {
     const container = document.querySelector('.main');
     const noteBlock = document.createElement('div');
@@ -11,7 +10,7 @@ addBtn.addEventListener('click', function createNote() {
     noteBlock.innerHTML = `
             <div class="left-part">
                 <div class="checker">  
-                    <button id="checkNote" onclick="checkNote(${noteBlock.id})">
+                    <button onclick="checkNote(${noteBlock.id})">
                     </button> 
                 </div>
                 <div class="content">
@@ -19,7 +18,7 @@ addBtn.addEventListener('click', function createNote() {
                 </div>
             </div>
             <div class="deleter">
-                <button id="deleteNote" onclick="deleteNote()">
+                <button onclick="deleteNote(${noteBlock.id})">
                     X
                 </button> 
             </div>
@@ -28,8 +27,7 @@ addBtn.addEventListener('click', function createNote() {
 });
 
 function checkNote(id) {
-    const note = document.getElementById('id');
-    // const btn = document.getElementById('checkNote');
+    const note = document.getElementById(id);
     const btn = note.children[0].children[0].children[0];
     btn.innerHTML = `
         <i class="fa-solid fa-check"></i>
@@ -37,9 +35,8 @@ function checkNote(id) {
     console.log("Checked note", id)
 }
 
-function deleteNote() {
-    // const currentId = '';
-    // const note = document.getElementById('id');
-    // note.remove();
-    console.log("Trying to remove note...")
+function deleteNote(id) {
+    const note = document.getElementById(id);
+    note.remove();
+    console.log("Trying to remove note...", id)
 }
